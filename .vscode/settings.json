@@ -40,6 +40,7 @@
     "*.synctex.gz",
     "*.run.xml"
   ],
+  "latex-workshop.message.badbox.show": "none",
   "latex-workshop.view.pdf.viewer": "tab",
   "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
   "[tex]": {
