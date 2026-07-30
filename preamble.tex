@@ -15,11 +15,21 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{amsmath}
+\usepackage{siunitx}
 \usepackage{hyperref}
-\hypersetup{hidelinks}
+\hypersetup{
+  hidelinks,
+  pdftitle={Effects of Biochar as a Peat Alternative on Salt Stress Responses of Four Mint Species (Mentha piperita, Mentha spicata, Mentha crispata and Mentha suaveolens)},
+  pdfauthor={Nuengmanixai SILIPHON},
+}
 \usepackage[nopatch=footnote]{microtype} % newtx's Times config has no footnote-patch target; this silences the harmless warning
 \usepackage{xcolor}
 \usepackage{parskip}
+
+% --- Number figures/tables per chapter (Figure 3.1, Table 4.2, ...) ---
+\usepackage{chngcntr}
+\counterwithin{figure}{chapter}
+\counterwithin{table}{chapter}
 
 \usepackage[
   backend=biber,
