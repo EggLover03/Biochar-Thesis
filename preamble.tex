@@ -15,7 +15,9 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{amsmath}
+\usepackage{microtype}
 \usepackage{hyperref}
+\hypersetup{hidelinks}
 \usepackage{xcolor}
 \usepackage{parskip}
 
@@ -23,13 +25,33 @@
   backend=biber,
   citestyle=authoryear,
   bibstyle=numeric,
-  sorting=none,
+  sorting=nyt,
   language=english
 ]{biblatex}
+\setcounter{biburlnumpenalty}{9000}
+\setcounter{biburlucpenalty}{9000}
+\setcounter{biburllcpenalty}{9000}
 
 \usepackage{csquotes}
 
 \addbibresource{references.bib}
+
+% --- Page numbers: bottom-right, continuous (per university instructions) ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[R]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% --- Captions: tables above, figures below (per university instructions) ---
+\usepackage{caption}
+\captionsetup[table]{position=top}
+\captionsetup[figure]{position=bottom}
 
 % --- Make author names uppercase in bibliography ---
 \DeclareNameFormat{author}{%
