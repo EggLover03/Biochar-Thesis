@@ -1,0 +1,42 @@
+\usepackage[
+  margin=3cm,
+  left=3cm,
+  right=2cm,
+  top=2cm,
+  bottom=3cm
+]{geometry}
+
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{setspace}
+\onehalfspacing
+%\sloppy
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+\usepackage[
+  backend=biber,
+  citestyle=authoryear,
+  bibstyle=numeric,
+  sorting=none,
+  language=english
+]{biblatex}
+
+\usepackage{csquotes}
+
+\addbibresource{references.bib}
+
+% --- Make author names uppercase in bibliography ---
+\DeclareNameFormat{author}{%
+  \nameparts{#1}%
+  \MakeUppercase{\namepartfamily}%
+  \ifblank{\namepartgiven}{}{\addcomma\space\MakeUppercase{\namepartgiven}}%
+  \ifblank{\namepartprefix}{}{\space\MakeUppercase{\namepartprefix}}%
+  \ifblank{\namepartsuffix}{}{\space\MakeUppercase{\namepartsuffix}}%
+  \usebibmacro{name:andothers}%
+}
