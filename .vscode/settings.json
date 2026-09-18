@@ -10,7 +10,14 @@
     {
       "name": "latexmk",
       "command": "latexmk",
-      "args": ["%DOC%"]
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ]
     }
   ],
   "latex-workshop.latex.autoBuild.run": "onFileChange",
