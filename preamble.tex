@@ -39,8 +39,17 @@
   citestyle=authoryear,
   bibstyle=numeric,
   sorting=nyt,
+  maxcitenames=2,
+  mincitenames=1,
+  uniquelist=false,
+  uniquename=false,
+  maxbibnames=99,
   language=english
 ]{biblatex}
+% In-text citations follow the university style: (Smith, 1999), (Smith and Brown, 2000),
+% (Smith and colleagues, 2001); the reference list names all authors.
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+\DefineBibliographyStrings{english}{andothers={and colleagues}}
 \setcounter{biburlnumpenalty}{9000}
 \setcounter{biburlucpenalty}{9000}
 \setcounter{biburllcpenalty}{9000}
