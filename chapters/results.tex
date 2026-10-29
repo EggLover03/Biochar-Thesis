@@ -2,8 +2,6 @@
 
 The values given in this chapter are the means of three different leaves sampled from each pot, except for the fresh, turgid and dry weights, which were measured on one leaf per pot. Each combination of species, growing medium and salinity level is represented by a single pot, so the differences between treatments are described and the effects of biochar and salinity were tested within each species on the pot means (Section~\ref{sec:anova}). Percentage differences are calculated from the means in Tables~\ref{tab:growth} and~\ref{tab:physiology}.
 
-\textcolor{red}{TODO: Only the mean of each pot is available, not the individual leaf measurements (and no standard deviations), so the statistical tests in Section~\ref{sec:anova} could only be done on the pot means and are exploratory. Check with the supervisor that this analysis is acceptable.}
-
 \section{Growth responses of mint species to salt stress}
 
 Salinity reduced the growth of all three taxa (Table~\ref{tab:growth}). In unamended peat, plant height at 50~mM NaCl was 31\% lower than at 0~mM in \textit{M. piperita}, 44\% lower in \textit{M. crispata} and 51\% lower in \textit{M. spicata} `Moroccan'. Leaf length and leaf width followed the same pattern: in unamended peat, leaf length at 50~mM was 21\%, 55\% and 33\% lower than at 0~mM, and leaf width 19\%, 44\% and 24\% lower, in the same order of taxa. The reduction was already visible at 25~mM, where the values were in most cases intermediate between those of the 0 and 50~mM treatments.
@@ -68,12 +66,12 @@ The Fv/Fm ratio ranged from 0.787 to 0.865 (Table~\ref{tab:physiology}). It was 
 
 The chlorophyll content decreased more strongly with salinity. In unamended peat, the chlorophyll content at 50~mM was 29\% lower than at 0~mM in \textit{M. piperita}, 51\% lower in \textit{M. crispata} and 59\% lower in \textit{M. spicata} `Moroccan'. With 30~g of biochar the decreases were 11\%, 21\% and 28\%, respectively. At 50~mM, the chlorophyll content with 30~g of biochar was 33\%, 83\% and 109\% higher than in unamended peat for the three taxa, respectively. One exception to the general trend was \textit{M. crispata} in unamended peat, where the chlorophyll content at 25~mM (30.05) was higher than at 0~mM (21.67).
 
-The relative water content (RWC) ranged from 69.5 to 99.1\% (Table~\ref{tab:physiology}). In \textit{M. piperita} it was 10\%, 9\% and 7\% lower at 50~mM than at 0~mM with 0, 15 and 30~g of biochar, respectively, and in \textit{M. crispata} 3\%, 6\% and 4\% lower. In \textit{M. spicata} `Moroccan' the RWC was 9\% and 5\% lower at 50~mM with 15 and 30~g of biochar, whereas in unamended peat it was higher at 50~mM (99.1\%) than at 0~mM (85.3\%). At 50~mM, the RWC of \textit{M. piperita} with 15 and 30~g of biochar was 7\% and 11\% higher than in unamended peat; in \textit{M. crispata} and \textit{M. spicata} `Moroccan' it was not higher with biochar. The fresh, turgid and dry weights of the sampled leaf are given in Table~\ref{tab:weights}.
+The relative water content (RWC), calculated from the fresh, turgid and dry weights with Equation~\ref{eq:rwc}, ranged from 12.4 to 99.9\% (Table~\ref{tab:physiology}). It was much lower in all pots with biochar (12.4 to 29.3\%) than in the unamended pots of \textit{M. crispata} (73.2 to 83.8\%) and \textit{M. spicata} `Moroccan' (85.5 to 99.9\%), whereas in \textit{M. piperita} the unamended pots also had low values (20.0 to 27.7\%). The RWC did not decrease with salinity: it was higher at 50~mM than at 0~mM in eight of the nine combinations of taxon and growing medium, for example by 38\% in unamended \textit{M. piperita} and by 48\% and 46\% with 15 and 30~g of biochar; the only decrease was in unamended \textit{M. crispata} (5\%). The fresh, turgid and dry weights of the sampled leaf are given in Table~\ref{tab:weights}.
 
 \begin{singlespace}
 \small
 \begin{longtable}{p{3cm}cc>{\centering\arraybackslash}p{2.2cm}>{\centering\arraybackslash}p{2.2cm}>{\centering\arraybackslash}p{2.2cm}}
-  \caption[Fv/Fm, chlorophyll content and RWC]{Fv/Fm ratio, chlorophyll content and relative water content (RWC) of the three mint taxa by biochar rate and salinity level (mean of the leaves sampled from each pot).} \label{tab:physiology} \\
+  \caption[Fv/Fm, chlorophyll content and RWC]{Fv/Fm ratio, chlorophyll content and relative water content (RWC) of the three mint taxa by biochar rate and salinity level (mean of the leaves sampled from each pot; RWC calculated from the weights in Table~\ref{tab:weights}).} \label{tab:physiology} \\
   \toprule
   Species & Biochar (g) & NaCl (mM) & Fv/Fm & Chlorophyll content ($\mu$mol~cm$^{-2}$) & RWC (\%) \\
   \midrule
@@ -84,35 +82,35 @@ The relative water content (RWC) ranged from 69.5 to 99.1\% (Table~\ref{tab:phys
   \endhead
   \bottomrule
   \endlastfoot
-  \textit{M. piperita} & 0 & 0 & 0.863 & 41.18 & 80 \\
-   & 0 & 25 & 0.843 & 32.89 & 79 \\
-   & 0 & 50 & 0.82 & 29.06 & 72.2 \\
-   & 15 & 0 & 0.86 & 39.05 & 84.9 \\
-   & 15 & 25 & 0.843 & 36.26 & 78.6 \\
-   & 15 & 50 & 0.822 & 31.91 & 77.6 \\
-   & 30 & 0 & 0.865 & 43.6 & 86.6 \\
-   & 30 & 25 & 0.865 & 40.54 & 80.4 \\
-   & 30 & 50 & 0.83 & 38.69 & 80.5 \\
+  \textit{M. piperita} & 0 & 0 & 0.863 & 41.18 & 20.0 \\
+   & 0 & 25 & 0.843 & 32.89 & 21.0 \\
+   & 0 & 50 & 0.82 & 29.06 & 27.7 \\
+   & 15 & 0 & 0.86 & 39.05 & 15.1 \\
+   & 15 & 25 & 0.843 & 36.26 & 21.4 \\
+   & 15 & 50 & 0.822 & 31.91 & 22.4 \\
+   & 30 & 0 & 0.865 & 43.6 & 13.4 \\
+   & 30 & 25 & 0.865 & 40.54 & 19.6 \\
+   & 30 & 50 & 0.83 & 38.69 & 19.6 \\
   \midrule
-  \textit{M. crispata} & 0 & 0 & 0.841 & 21.67 & 74.9 \\
-   & 0 & 25 & 0.86 & 30.05 & 69.5 \\
-   & 0 & 50 & 0.815 & 10.7 & 73 \\
-   & 15 & 0 & 0.838 & 22 & 75.2 \\
-   & 15 & 25 & 0.828 & 20.6 & 73.9 \\
-   & 15 & 50 & 0.797 & 16.99 & 70.7 \\
-   & 30 & 0 & 0.847 & 24.85 & 75.7 \\
-   & 30 & 25 & 0.843 & 23.56 & 75.8 \\
-   & 30 & 50 & 0.819 & 19.57 & 72.8 \\
+  \textit{M. crispata} & 0 & 0 & 0.841 & 21.67 & 76.9 \\
+   & 0 & 25 & 0.86 & 30.05 & 83.8 \\
+   & 0 & 50 & 0.815 & 10.7 & 73.2 \\
+   & 15 & 0 & 0.838 & 22 & 24.8 \\
+   & 15 & 25 & 0.828 & 20.6 & 26.1 \\
+   & 15 & 50 & 0.797 & 16.99 & 29.3 \\
+   & 30 & 0 & 0.847 & 24.85 & 24.4 \\
+   & 30 & 25 & 0.843 & 23.56 & 24.2 \\
+   & 30 & 50 & 0.819 & 19.57 & 27.2 \\
   \midrule
-  \textit{M. spicata} `Moroccan' & 0 & 0 & 0.85 & 15.32 & 85.3 \\
-   & 0 & 25 & 0.846 & 10.75 & 88.2 \\
-   & 0 & 50 & 0.787 & 6.3 & 99.1 \\
-   & 15 & 0 & 0.86 & 17.4 & 87.1 \\
-   & 15 & 25 & 0.831 & 13.88 & 85.1 \\
-   & 15 & 50 & 0.816 & 10.52 & 79.6 \\
-   & 30 & 0 & 0.863 & 18.35 & 87.6 \\
-   & 30 & 25 & 0.852 & 15.84 & 84.4 \\
-   & 30 & 50 & 0.82 & 13.16 & 83.4 \\
+  \textit{M. spicata} `Moroccan' & 0 & 0 & 0.85 & 15.32 & 85.5 \\
+   & 0 & 25 & 0.846 & 10.75 & 88.3 \\
+   & 0 & 50 & 0.787 & 6.3 & 99.9 \\
+   & 15 & 0 & 0.86 & 17.4 & 12.9 \\
+   & 15 & 25 & 0.831 & 13.88 & 14.9 \\
+   & 15 & 50 & 0.816 & 10.52 & 20.4 \\
+   & 30 & 0 & 0.863 & 18.35 & 12.4 \\
+   & 30 & 25 & 0.852 & 15.84 & 15.6 \\
+   & 30 & 50 & 0.82 & 13.16 & 16.6 \\
 \end{longtable}
 \end{singlespace}
 
@@ -170,7 +168,7 @@ The effect of salinity depended on the growing medium and on the taxon. In all t
 
 The effects of the biochar rate and of the salinity level were tested within each species by two-way analysis of variance on the pot means (Table~\ref{tab:anova}). Because there was one pot per treatment combination, the interaction between biochar and salinity could not be tested separately and these tests are exploratory.
 
-Plant height was significantly affected by both factors in all three taxa ($p<0.01$). According to Tukey's test, plant height differed between all three salinity levels in every taxon, and between all biochar rates except between 15 and 30~g in \textit{M. spicata} `Moroccan' ($p=0.066$). The Fv/Fm ratio was significantly reduced by salinity in all taxa ($p<0.05$), but not significantly affected by the biochar rate ($p\geq0.10$). The chlorophyll content was significantly affected by both factors in \textit{M. piperita} (biochar $p=0.035$, NaCl $p=0.021$) and \textit{M. spicata} `Moroccan' (biochar $p=0.008$, NaCl $p=0.002$), but not in \textit{M. crispata} ($p=0.759$ and $p=0.144$), probably because of the unusual value of the unamended pot at 25~mM. Leaf width was significantly affected by both factors in \textit{M. piperita} and \textit{M. spicata} `Moroccan', and leaf length in \textit{M. spicata} `Moroccan' ($p<0.001$ for both); in \textit{M. crispata}, leaf length was significantly affected by salinity ($p=0.032$) but not by biochar ($p=0.052$). The RWC was significantly affected only by salinity in \textit{M. piperita} ($p=0.029$) and by neither factor in the other two taxa.
+Plant height was significantly affected by both factors in all three taxa ($p<0.01$). According to Tukey's test, plant height differed between all three salinity levels in every taxon, and between all biochar rates except between 15 and 30~g in \textit{M. spicata} `Moroccan' ($p=0.066$). The Fv/Fm ratio was significantly reduced by salinity in all taxa ($p<0.05$), but not significantly affected by the biochar rate ($p\geq0.10$). The chlorophyll content was significantly affected by both factors in \textit{M. piperita} (biochar $p=0.035$, NaCl $p=0.021$) and \textit{M. spicata} `Moroccan' (biochar $p=0.008$, NaCl $p=0.002$), but not in \textit{M. crispata} ($p=0.759$ and $p=0.144$), probably because of the unusual value of the unamended pot at 25~mM. Leaf width was significantly affected by both factors in \textit{M. piperita} and \textit{M. spicata} `Moroccan', and leaf length in \textit{M. spicata} `Moroccan' ($p<0.001$ for both); in \textit{M. crispata}, leaf length was significantly affected by salinity ($p=0.032$) but not by biochar ($p=0.052$). The RWC was significantly affected by the biochar rate in \textit{M. crispata} and \textit{M. spicata} `Moroccan' ($p<0.001$), where the pots with biochar differed from the unamended pots but not from each other, and by salinity only in \textit{M. piperita} ($p=0.027$).
 
 \begin{table}[htbp]
   \centering
@@ -186,21 +184,21 @@ Plant height was significantly affected by both factors in all three taxa ($p<0.
      & Leaf length & 4.94 & 0.083 & 5.70 & 0.067 \\
      & Leaf width & 19.31 & 0.009 & 18.45 & 0.010 \\
      & Chlorophyll content & 8.65 & 0.035 & 11.81 & 0.021 \\
-     & RWC & 5.69 & 0.068 & 9.72 & 0.029 \\
+     & RWC & 5.76 & 0.066 & 10.08 & 0.027 \\
     \midrule
     \textit{M. crispata} & Plant height & 52.08 & 0.001 & 97.57 & $<$0.001 \\
      & Fv/Fm & 4.00 & 0.111 & 15.30 & 0.013 \\
      & Leaf length & 6.79 & 0.052 & 9.15 & 0.032 \\
      & Leaf width & 4.77 & 0.087 & 6.53 & 0.055 \\
      & Chlorophyll content & 0.30 & 0.759 & 3.27 & 0.144 \\
-     & RWC & 1.00 & 0.443 & 1.87 & 0.266 \\
+     & RWC & 170.11 & $<$0.001 & 0.34 & 0.732 \\
     \midrule
     \textit{M. spicata} `Moroccan' & Plant height & 34.41 & 0.003 & 52.15 & 0.001 \\
      & Fv/Fm & 1.72 & 0.288 & 15.13 & 0.014 \\
      & Leaf length & 63.66 & $<$0.001 & 115.07 & $<$0.001 \\
      & Leaf width & 13.85 & 0.016 & 43.09 & 0.002 \\
      & Chlorophyll content & 20.70 & 0.008 & 40.13 & 0.002 \\
-     & RWC & 1.16 & 0.401 & 0.05 & 0.956 \\
+     & RWC & 617.75 & $<$0.001 & 6.41 & 0.057 \\
     \bottomrule
   \end{tabular}
 \end{table}

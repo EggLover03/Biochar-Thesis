@@ -4,17 +4,15 @@ The experimental design and salt stress treatments were developed based on estab
 
 \section{Experimental site and growth conditions}
 
-The room temperature was 26~$^{\circ}$C.
+The room temperature was 26~$^{\circ}$C. The lighting was 300 PAR, full spectrum, and the air humidity was 60 – 70\%.
 
-\textcolor{red}{TODO: Add the location of the experiment, the lighting (natural or artificial light and photoperiod) and the air humidity.}
+\textcolor{red}{TODO: Add the location of the experiment and the photoperiod (hours of light per day), and the unit of the light intensity (for example $\mu$mol~m$^{-2}$~s$^{-1}$).}
 
 \section{Plant material}
 
 Three mint taxa were used: \textit{Mentha piperita} L. (peppermint), \textit{Mentha crispata} (curly mint) and \textit{Mentha spicata} L. `Moroccan' (Moroccan mint).
 
-The plants were bought from a commercial supplier as rooted plantlets, with 3 – 4 plantlets planted in each pot. The supplier was Oázis Kertészet Kft. in Budapest, Hungary.
-
-\textcolor{red}{TODO: State the age or developmental stage (or size) of the plantlets at potting.}
+The plants were bought from a commercial supplier as rooted plantlets, with 3 – 4 plantlets planted in each pot. The supplier was Oázis Kertészet Kft. in Budapest, Hungary. The plantlets were propagated by root shoots and the shoots were 2 – 3 months old at planting. The supplier has a plant certificate that the variety is a pure variety.
 
 \section{Experimental design}
 
@@ -120,7 +118,7 @@ Mospilan 20 SG was used at 0.1 g per 0.5 litre of water. It was applied twice: t
 
 Salinity treatments were applied on 29th September 2026, 14 days after potting. It was also applied at the later stages when the plants had developed larger shoot growth as done by \textcite{Morshedloo2025} on salinity. The pots for each salinity treatment were filled with 100 ml of the correct NaCl solution; pots in the 0 mM treatment (including unamended peat) were not filled with NaCl solution. This salinity treatment was replicated 8 days later on 7 October 2026. One more application of the NaCl solution at the same dose was made on 13 October 2026. During the treatment period, the electrical conductivity of the substrate and of the drainage water was not measured.
 
-\textcolor{red}{TODO: State how long the plants were kept under treatment before measurement.}
+The NaCl solution was applied once a week for three weeks, and the plants were measured on the fourth week, four weeks after the first application.
 
 \section{Measured parameters}
 
@@ -135,15 +133,17 @@ The relative water content (RWC) was calculated from the fresh weight (FW), the 
   \label{eq:rwc}
 \end{equation}
 
-The turgid weight was determined after soaking the leaf for 24 hours, and the dry weight after drying the leaf at 60~$^{\circ}$C for 8 hours.
+The turgid weight was determined after soaking the leaf in distilled water for 24 hours, and the dry weight after drying the leaf at 60~$^{\circ}$C for 8 hours.
 
-\textcolor{red}{TODO: State the medium used for soaking (for example distilled water) and add the description of the Fv/Fm and chlorophyll measurements (instrument, dark adaptation time, leaf used, unit $\mu$mol~cm$^{-2}$).}
+The Fv/Fm ratio was measured with a FluorPen FP 100 after 30 minutes of dark adaptation. The chlorophyll content was measured with an Apogee MC-100 chlorophyll meter.
+
+\textcolor{red}{TODO: State which leaf was used for the Fv/Fm and chlorophyll measurements, how plant height, leaf length and leaf width were measured, and check the unit of the chlorophyll content: the Apogee MC-100 normally reports $\mu$mol~m$^{-2}$, whereas the table heading says $\mu$mol~cm$^{-2}$.}
 
 \subsection{Laboratory analyses}
 
 The laboratory of the faculty was used to measure the chlorophyll content and measure plant stress indicators using spectrophotometry. The content of essential oils was not determined as this type of analysis is not possible at the faculty.
 
-\textcolor{red}{TODO: State which stress indicators were measured, the extraction method, the wavelengths and equations used, and the make and model of the spectrophotometer. The laboratory measurements are being carried out by Professor Florian, who can supply these details.}
+\textcolor{red}{TODO: The paragraph above says that the chlorophyll content was measured by spectrophotometry, but it was measured with the Apogee MC-100 (see Physiological measurements). Reconcile the two, and state which stress indicators were measured with the spectrophotometer, if any (extraction method, wavelengths, equations, make and model).}
 
 \section{Statistical analysis}
 
@@ -153,4 +153,4 @@ Each growing medium and salinity combination had only one pot and the leaves sam
 
 Only the mean of the three leaves of each pot was available, so the pot (one value per treatment combination) was used as the unit of analysis. The effects of the biochar rate (0, 15 and 30~g) and of the salinity level (0, 25 and 50~mM NaCl) were tested separately for each species by two-way analysis of variance without an interaction term, using the biochar $\times$ salinity interaction as the error term (4 degrees of freedom), followed by Tukey's test for pairwise comparisons. The significance level was 0.05. The calculations were made in Python (SciPy). The fresh, turgid and dry weights, measured on one leaf per pot, were not analysed statistically. Because of the lack of replication, the tests are exploratory.
 
-\textcolor{red}{TODO: Check with the supervisor that this analysis is acceptable. The paragraphs above say that comparisons were based on leaf values, which no longer matches an analysis made on the pot means; reword them if necessary.}
+\textcolor{red}{TODO: The supervisor accepted this analysis. The paragraphs above say that comparisons were based on leaf values, which no longer matches an analysis made on the pot means; reword them if necessary.}
