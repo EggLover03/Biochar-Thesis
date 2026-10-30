@@ -164,7 +164,61 @@ These values are not biologically plausible and are therefore not interpreted he
 
 \section{Interaction between mint species, growing media, and salt stress}
 
-The effect of salinity depended on the growing medium and on the taxon. In all three taxa the reductions in plant height and chlorophyll content caused by 50~mM NaCl were smaller with biochar than in unamended peat, and the reduction became smaller with the higher biochar rate; leaf size mostly followed the same pattern. The relative benefit of biochar under salt stress was largest in the two taxa that were the most affected by salinity in unamended peat, \textit{M. crispata} and \textit{M. spicata} `Moroccan', and smallest in \textit{M. piperita}. In contrast, the Fv/Fm ratio was only slightly affected by either factor.
+The effect of salinity depended on the growing medium and on the taxon. Because the taxa differed greatly in their absolute size, the interaction is most clearly seen in the proportional loss of plant height caused by the highest salinity, that is, the difference between the plants at 0 and 50~mM expressed as a percentage of the plants at 0~mM within the same growing medium. These proportional losses are given in Table~\ref{tab:decline} and shown in Figure~\ref{fig:decline}.
+
+\begin{table}[htbp]
+  \centering
+  \caption[Proportional loss of plant height at 50~mM NaCl]{Loss of plant height at 50~mM NaCl relative to 0~mM within the same growing medium, as a percentage of the height at 0~mM.}
+  \label{tab:decline}
+  \begin{tabular}{l S[table-format=2.1] S[table-format=2.1] S[table-format=2.1]}
+    \toprule
+    & \multicolumn{3}{c}{Loss of plant height (\%)} \\
+    \cmidrule(lr){2-4}
+    Species & {Unamended} & {15~g biochar} & {30~g biochar} \\
+    \midrule
+    \textit{M. piperita}             & 30.7 & 23.3 & 18.0 \\
+    \textit{M. crispata}             & 44.2 & 31.2 & 27.7 \\
+    \textit{M. spicata} `Moroccan'   & 50.8 & 35.8 & 28.4 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      ybar,
+      width=0.9\textwidth,
+      height=7cm,
+      bar width=14pt,
+      ymin=0, ymax=60,
+      ylabel={Loss of plant height at 50~mM (\%)},
+      symbolic x coords={{\textit{M. piperita}},{\textit{M. crispata}},{`Moroccan'}},
+      xtick=data,
+      enlarge x limits=0.3,
+      legend style={at={(0.5,-0.18)},anchor=north,legend columns=3,draw=none},
+      ymajorgrids=true,
+      grid style=dashed,
+      nodes near coords,
+      every node near coord/.append style={font=\footnotesize},
+    ]
+      \addplot[fill=gray!25] coordinates {({\textit{M. piperita}},30.7) ({\textit{M. crispata}},44.2) ({`Moroccan'},50.8)};
+      \addplot[fill=gray!55] coordinates {({\textit{M. piperita}},23.3) ({\textit{M. crispata}},31.2) ({`Moroccan'},35.8)};
+      \addplot[fill=gray!85] coordinates {({\textit{M. piperita}},18.0) ({\textit{M. crispata}},27.7) ({`Moroccan'},28.4)};
+      \legend{Unamended peat, 15~g biochar, 30~g biochar}
+    \end{axis}
+  \end{tikzpicture}
+  \caption[Loss of plant height at 50~mM NaCl by growing medium]{Loss of plant height caused by 50~mM NaCl, relative to the unsalted plants of the same growing medium, for each taxon and biochar rate.}
+  \label{fig:decline}
+\end{figure}
+
+The pattern is consistent across the three taxa. In \textit{M. piperita}, salinity of 50~mM reduced plant height by 30.7\% in unamended peat, by 23.3\% with 15~g of biochar and by 18.0\% with 30~g, so that the loss with the higher biochar rate was about four tenths smaller than in unamended peat. In \textit{M. crispata} the corresponding losses were 44.2\%, 31.2\% and 27.7\%, and in \textit{M. spicata} `Moroccan' they were 50.8\%, 35.8\% and 28.4\%. In every taxon the proportional loss fell as the biochar rate rose, and in every taxon the 30~g rate gave the smallest loss.
+
+The size of the benefit differed between the taxa. The reduction in the proportional loss between unamended peat and 30~g of biochar was 12.7 percentage points in \textit{M. piperita}, 16.5 in \textit{M. crispata} and 22.4 in \textit{M. spicata} `Moroccan'. The taxa that suffered most from salinity in unamended peat therefore gained most from biochar, and `Moroccan', which lost more than half of its height at 50~mM in unamended peat, lost only a little over a quarter at the higher biochar rate.
+
+A second feature of the interaction is that biochar did not merely shift growth upwards by a constant amount. Had it done so, the proportional loss would have been similar in all three growing media. Instead the loss itself became smaller as the biochar rate rose, which indicates that the plants grown with biochar were less sensitive to the salt rather than simply larger to begin with. The same direction was seen in the chlorophyll content and, less consistently, in leaf length and width, whereas the Fv/Fm ratio was only slightly affected by either factor and showed no comparable pattern.
+
+It should be noted that these proportional losses are calculated from single pots and are therefore descriptive. They are reported because they express the relationship between the two factors more directly than the absolute values, not because the differences between them have been shown to be statistically reliable.
 
 \section{Statistical analysis of the effects of biochar and salinity}\label{sec:anova}
 
