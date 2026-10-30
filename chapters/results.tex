@@ -10,14 +10,14 @@ Salinity reduced the growth of all three taxa (Table~\ref{tab:growth}). In uname
 
 \begin{singlespace}
 \small
-\begin{longtable}{p{3cm}cc>{\centering\arraybackslash}p{2.2cm}>{\centering\arraybackslash}p{2.2cm}>{\centering\arraybackslash}p{2.2cm}}
+\begin{longtable}{p{3cm}cc S[table-format=2.2,round-mode=places,round-precision=2] S[table-format=1.2,round-mode=places,round-precision=2] S[table-format=1.2,round-mode=places,round-precision=2]}
   \caption[Plant height and leaf size]{Plant height and leaf size of the three mint taxa by biochar rate and salinity level (mean of the leaves sampled from each pot).} \label{tab:growth} \\
   \toprule
-  Species & Biochar (g) & NaCl (mM) & Plant height (cm) & Leaf length (cm) & Leaf width (cm) \\
+  Species & Biochar (g) & NaCl (mM) & {Plant height (cm)} & {Leaf length (cm)} & {Leaf width (cm)} \\
   \midrule
   \endfirsthead
   \toprule
-  Species & Biochar (g) & NaCl (mM) & Plant height (cm) & Leaf length (cm) & Leaf width (cm) \\
+  Species & Biochar (g) & NaCl (mM) & {Plant height (cm)} & {Leaf length (cm)} & {Leaf width (cm)} \\
   \midrule
   \endhead
   \bottomrule
@@ -72,14 +72,14 @@ These values are not biologically plausible and are therefore not interpreted he
 
 \begin{singlespace}
 \small
-\begin{longtable}{p{3cm}cc>{\centering\arraybackslash}p{2.2cm}>{\centering\arraybackslash}p{2.2cm}>{\centering\arraybackslash}p{2.2cm}}
+\begin{longtable}{p{3cm}cc S[table-format=1.3,round-mode=places,round-precision=3] S[table-format=3.2,round-mode=places,round-precision=2] S[table-format=2.1,round-mode=places,round-precision=1]}
   \caption[Fv/Fm, chlorophyll content and RWC]{Fv/Fm ratio, chlorophyll content and relative water content (RWC) of the three mint taxa by biochar rate and salinity level (mean of the leaves sampled from each pot; RWC calculated from the weights in Table~\ref{tab:weights}).} \label{tab:physiology} \\
   \toprule
-  Species & Biochar (g) & NaCl (mM) & Fv/Fm & Chlorophyll content ($\mu$mol~m$^{-2}$) & RWC (\%) \\
+  Species & Biochar (g) & NaCl (mM) & {Fv/Fm} & {Chlorophyll content ($\mu$mol~m$^{-2}$)} & {RWC (\%)} \\
   \midrule
   \endfirsthead
   \toprule
-  Species & Biochar (g) & NaCl (mM) & Fv/Fm & Chlorophyll content ($\mu$mol~m$^{-2}$) & RWC (\%) \\
+  Species & Biochar (g) & NaCl (mM) & {Fv/Fm} & {Chlorophyll content ($\mu$mol~m$^{-2}$)} & {RWC (\%)} \\
   \midrule
   \endhead
   \bottomrule
@@ -118,14 +118,14 @@ These values are not biologically plausible and are therefore not interpreted he
 
 \begin{singlespace}
 \small
-\begin{longtable}{p{3cm}cc>{\centering\arraybackslash}p{2.2cm}>{\centering\arraybackslash}p{2.2cm}>{\centering\arraybackslash}p{2.2cm}}
+\begin{longtable}{p{3cm}cc S[table-format=2.2,round-mode=places,round-precision=2] S[table-format=3.2,round-mode=places,round-precision=2] S[table-format=1.2,round-mode=places,round-precision=2]}
   \caption[Leaf fresh, turgid and dry weight]{Fresh weight (FW), turgid weight (TW) and dry weight (DW) of one leaf of the three mint taxa by biochar rate and salinity level (mg).} \label{tab:weights} \\
   \toprule
-  Species & Biochar (g) & NaCl (mM) & FW (mg) & TW (mg) & DW (mg) \\
+  Species & Biochar (g) & NaCl (mM) & {FW (mg)} & {TW (mg)} & {DW (mg)} \\
   \midrule
   \endfirsthead
   \toprule
-  Species & Biochar (g) & NaCl (mM) & FW (mg) & TW (mg) & DW (mg) \\
+  Species & Biochar (g) & NaCl (mM) & {FW (mg)} & {TW (mg)} & {DW (mg)} \\
   \midrule
   \endhead
   \bottomrule
@@ -177,9 +177,9 @@ Plant height was significantly affected by both factors in all three taxa ($p<0.
   \small
   \caption[Two-way ANOVA of biochar rate and salinity]{Two-way analysis of variance (without interaction; 2 and 4 degrees of freedom) of the effects of biochar rate and salinity level on the pot means within each taxon. $F$ is the test statistic and $p$ the probability; values of $p<0.05$ were considered significant.}
   \label{tab:anova}
-  \begin{tabular}{llrrrr}
+  \begin{tabular}{ll S[table-format=3.2,round-mode=places,round-precision=2] c S[table-format=3.2,round-mode=places,round-precision=2] c}
     \toprule
-    Species & Variable & $F$ (biochar) & $p$ (biochar) & $F$ (NaCl) & $p$ (NaCl) \\
+    Species & Variable & {$F$ (biochar)} & {$p$ (biochar)} & {$F$ (NaCl)} & {$p$ (NaCl)} \\
     \midrule
     \textit{M. piperita} & Plant height & 89.40 & $<$0.001 & 78.97 & $<$0.001 \\
      & Fv/Fm & 4.18 & 0.105 & 36.96 & 0.003 \\
