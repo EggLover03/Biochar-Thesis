@@ -12,6 +12,11 @@
 \onehalfspacing
 %\sloppy
 
+% --- Tighten the space around chapter headings so chapter openings
+%     do not leave a large empty band at the top of the page ---
+\usepackage{titlesec}
+\titlespacing*{\chapter}{0pt}{-10pt}{20pt}
+
 \usepackage{graphicx}
 \graphicspath{{figures/}}
 \usepackage{booktabs}
@@ -78,6 +83,7 @@
 
 % --- Make author names uppercase in bibliography ---
 \DeclareNameFormat{author}{%
+  \ifnumequal{\value{listcount}}{1}{}{\addspace\textendash\addspace}%
   \nameparts{#1}%
   \MakeUppercase{\namepartfamily}%
   \ifblank{\namepartgiven}{}{\addcomma\space\MakeUppercase{\namepartgiven}}%
@@ -85,3 +91,12 @@
   \ifblank{\namepartsuffix}{}{\space\MakeUppercase{\namepartsuffix}}%
   \usebibmacro{name:andothers}%
 }
+
+% --- Reference list formatting per the faculty instructions ---
+% Entries numbered "1." rather than "[1]"
+\DeclareFieldFormat{labelnumberwidth}{#1\adddot}
+% Authors separated by a dash, as in "SKEWES, O. - RODRIGUEZ, R."
+\DeclareDelimFormat{multinamedelim}{\addspace\textendash\addspace}
+\DeclareDelimFormat{finalnamedelim}{\addspace\textendash\addspace}
+% Titles set plain, without quotation marks
+\DeclareFieldFormat[article,inbook,incollection,inproceedings,thesis,report,online,misc,unpublished]{title}{#1}
