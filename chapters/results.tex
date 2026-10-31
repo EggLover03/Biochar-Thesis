@@ -26,7 +26,7 @@ The smallest taxon throughout was \textit{M. spicata} `Moroccan' and it was also
 
 In unamended peat, \textit{M. spicata} `Moroccan' (50.8\%), \textit{M. crispata} (44.2\%) and \textit{M. piperita} (30.7\%) are ranked by their proportional loss of height at 50~mM, with the tallest and least affected species being \textit{M. piperita}. The order of ranking by leaf length is various with \textit{M. crispata} being the lowest (54.6\%), `Moroccan' (33.4\%) and \textit{M. piperita} (21.1\%). In \textit{M. piperita} and `Moroccan', however, the taxa were not distinguished only in terms of their salt tolerance, but rather by the first organ to be affected: height was the more sensitive criterion in the former taxa, and leaves at least as strongly affected as stems in the latter. For all three taxa all values at 25~mM were within the range of the control and 50~mM treatments, so there was no threshold response within this range of the measured parameters.
 
-\begin{singlespace}
+{\setstretch{1}
 \small
 \begin{longtable}{p{3cm}cc S[table-format=2.2,round-mode=places,round-precision=2] S[table-format=1.2,round-mode=places,round-precision=2] S[table-format=1.2,round-mode=places,round-precision=2]}
   \caption[Plant height and leaf size]{Plant height and leaf size of the three mint taxa by biochar rate and salinity level (mean of the leaves sampled from each pot).} \label{tab:growth} \\
@@ -70,7 +70,7 @@ In unamended peat, \textit{M. spicata} `Moroccan' (50.8\%), \textit{M. crispata}
    & 30 & 25 & 20.26 & 4.52 & 2.19 \\
    & 30 & 50 & 16.33 & 3.89 & 1.93 \\
 \end{longtable}
-\end{singlespace}
+}
 
 \section{Effects of growing media on plant growth under salt stress}
 
@@ -102,7 +102,7 @@ The values are biologically nonrealistic and hence are not interpreted here. The
 
 These differences in method between treatments and why they have occurred are not known. The relative water content is given for completeness only, but is not used to interpret the results.
 
-\begin{singlespace}
+{\setstretch{1}
 \small
 \begin{longtable}{p{3cm}cc S[table-format=1.3,round-mode=places,round-precision=3] S[table-format=3.2,round-mode=places,round-precision=2] S[table-format=2.1,round-mode=places,round-precision=1]}
   \caption[Fv/Fm, chlorophyll content and RWC]{Fv/Fm ratio, chlorophyll content and relative water content (RWC) of the three mint taxa by biochar rate and salinity level (mean of the leaves sampled from each pot; RWC calculated from the weights in Table~\ref{tab:weights}).} \label{tab:physiology} \\
@@ -146,9 +146,9 @@ These differences in method between treatments and why they have occurred are no
    & 30 & 25 & 0.852 & 15.84 & 15.6 \\
    & 30 & 50 & 0.82 & 13.16 & 16.6 \\
 \end{longtable}
-\end{singlespace}
+}
 
-\begin{singlespace}
+{\setstretch{1}
 \small
 \begin{longtable}{p{3cm}cc S[table-format=2.2,round-mode=places,round-precision=2] S[table-format=3.2,round-mode=places,round-precision=2] S[table-format=1.2,round-mode=places,round-precision=2]}
   \caption[Leaf fresh, turgid and dry weight]{Fresh weight (FW), turgid weight (TW) and dry weight (DW) of one leaf of the three mint taxa by biochar rate and salinity level (mg).} \label{tab:weights} \\
@@ -192,7 +192,7 @@ These differences in method between treatments and why they have occurred are no
    & 30 & 25 & 7.51 & 41.76 & 1.17 \\
    & 30 & 50 & 8.01 & 42.05 & 1.22 \\
 \end{longtable}
-\end{singlespace}
+}
 
 \section{Interaction between mint species, growing media, and salt stress}
 
@@ -225,8 +225,9 @@ The response to salinity was different in the various growing media and for the 
       bar width=14pt,
       ymin=0, ymax=60,
       ylabel={Loss of plant height at 50~mM (\%)},
-      symbolic x coords={{\textit{M. piperita}},{\textit{M. crispata}},{`Moroccan'}},
+      symbolic x coords={piperita,crispata,Moroccan},
       xtick=data,
+      xticklabels={\textit{M. piperita},\textit{M. crispata},`Moroccan'},
       enlarge x limits=0.3,
       legend style={at={(0.5,-0.18)},anchor=north,legend columns=3,draw=none},
       ymajorgrids=true,
@@ -234,9 +235,9 @@ The response to salinity was different in the various growing media and for the 
       nodes near coords,
       every node near coord/.append style={font=\footnotesize},
     ]
-      \addplot[fill=gray!25] coordinates {({\textit{M. piperita}},30.7) ({\textit{M. crispata}},44.2) ({`Moroccan'},50.8)};
-      \addplot[fill=gray!55] coordinates {({\textit{M. piperita}},23.3) ({\textit{M. crispata}},31.2) ({`Moroccan'},35.8)};
-      \addplot[fill=gray!85] coordinates {({\textit{M. piperita}},18.0) ({\textit{M. crispata}},27.7) ({`Moroccan'},28.4)};
+      \addplot[fill=gray!25] coordinates {(piperita,30.7) (crispata,44.2) (Moroccan,50.8)};
+      \addplot[fill=gray!55] coordinates {(piperita,23.3) (crispata,31.2) (Moroccan,35.8)};
+      \addplot[fill=gray!85] coordinates {(piperita,18.0) (crispata,27.7) (Moroccan,28.4)};
       \legend{Unamended peat, 15~g biochar, 30~g biochar}
     \end{axis}
   \end{tikzpicture}
